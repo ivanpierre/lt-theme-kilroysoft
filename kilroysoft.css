@@ -1,0 +1,64 @@
+.cm-s-kilroysoft { color: White; background: Black; }
+
+/* Elements */
+.cm-s-kilroysoft span.cm-symbol {color: Red;}
+.cm-s-kilroysoft span.cm-variable {color: Aqua;}
+.cm-s-kilroysoft span.cm-string {color: LightGreen; font-style:italic;}
+.cm-s-kilroysoft span.cm-string-2 {color: LightRed; font-style:italic;}
+.cm-s-kilroysoft span.cm-number {color: Red; font-style:italic;}
+.cm-s-kilroysoft span.cm-bracket {color: White }
+.cm-s-kilroysoft span.cm-builtin {color: Aqua; }
+.cm-s-kilroysoft span.cm-keyword {color: Fuchsia; }
+.cm-s-kilroysoft span.cm-qualifier {color: Orange;}
+.cm-s-kilroysoft span.cm-comment { color:Silver; font-style:italic;}
+.cm-s-kilroysoft span.cm-def { color: LightYellow; }
+.cm-s-kilroysoft span.cm-meta {color: LightRed; }
+.cm-s-kilroysoft span.cm-atom { color: Orange;   font-style:italic;}
+.cm-s-kilroysoft span.cm-tag {color: White; }
+.cm-s-kilroysoft span.cm-header {color:#9dc; }
+
+/* Search */
+.cm-s-kilroysoft span.CodeMirror-searching { background: #aaa; color:black; }
+.cm-s-kilroysoft span.CodeMirror-searching-active { background: #afa; color:black; }
+
+/* Selected */
+.cm-s-kilroysoft .CodeMirror-selected { background: Blue; color: White;}
+.cm-s-kilroysoft .CodeMirror-focused .CodeMirror-selected { background: DarkBlue; }
+
+.cm-s-kilroysoft span.cm-SUBST { color:#FF1F69; }
+
+/* Background line */
+.cm-s-kilroysoft .activeline { background:#202020; }
+
+/* Rainbow Brackets */
+.cm-s-kilroysoft span.cm-bracket0 { color:#f88; background:#733; } /* Extraneous brackets */
+
+/* Brackets by level 1 the more external */
+.cm-s-kilroysoft span.cm-bracket1 {color: Black; font-weight:900; background:Grey; border: 1px solid white;}
+.cm-s-kilroysoft span.cm-bracket2 {color: Lime;}
+.cm-s-kilroysoft span.cm-bracket3 {color: Red;}
+.cm-s-kilroysoft span.cm-bracket4 {color: Yellow;}
+.cm-s-kilroysoft span.cm-bracket5 {color: DeepSkyBlue;}
+.cm-s-kilroysoft span.cm-bracket6 {color: Orange;}
+.cm-s-kilroysoft span.cm-bracket7 {color: SpringGreen;}
+.cm-s-kilroysoft span.cm-bracket8 {color: Wheat;}
+.cm-s-kilroysoft span.cm-bracket9 {color: Cyan;}
+.cm-s-kilroysoft span.cm-bracket10 {color: Red;}
+.cm-s-kilroysoft span.cm-bracket11 {color: Yellow;}
+.cm-s-kilroysoft span.cm-bracket12 {color: Lime;}
+
+/* Matching brackets */
+.cm-s-kilroysoft span.CodeMirror-matchingbracket {box-sizing:border-box; background:transparent; border-bottom:4px solid White; font-weight:bold;}
+
+/* Unmatching Brakets */
+.cm-s-kilroysoft span.CodeMirror-nonmatchingbracket {color: Black; border-bottom:4px solid Red; background: Red;}
+
+.cm-s-kilroysoft .cm-searching { background:#5f5f5f; border-radius:2px; color:#eee !important; }
+.cm-s-kilroysoft .searching-current { background:#13879C; color:#BFFCFF !important; }
+
+.CodeMirror div.CodeMirror-cursor { border-left: 2px solid White; }
+/* Shown when moving in bi-directional text */
+.CodeMirror div.CodeMirror-secondarycursor { border-left: 1px solid silver; }
+.CodeMirror.cm-keymap-fat-cursor div.CodeMirror-cursor { width: auto; border: none !important; background: rgba(0, 200, 200, .4); }
+
+.CodeMirror-gutters { background: #202020; border-right:1px solid #444; }
