@@ -28,9 +28,10 @@ For now its just tested with Clojure codemirror so the only used classes are
 - keyword (special forms and macros thereof)
 
 Seems to be a bug on the quote management (perhaps my FR-ch keyboard) so test for atoms are reported.
-Seem tu be a problem too with char type...
 
 I dive in the code...
+
+Ok, first constatation. Modular code, so it should be no problem... I shall study more in the deep. ;)
 
 Enjoy
 
