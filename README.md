@@ -14,6 +14,24 @@ The CSS file should be placed in .lighttable\css\themes\ directory.
 
 Warning if you change the name of the file, you should change the names of the classes in the CSS, else LightTable will not recognize them...
 
+Changes
+=======
+
+For now its just tested with Clojure codemirror so the only used classes are
+- builtin (sublist of known vars and function from the core library)
+- comment ; xxxxxxx \\n
+- string
+- char (seems to be managed as type but problems in the code)
+- atom (true false nil and quoted? I have to look the code)
+- number (for now only, integer including octal and hex, and all floats) radix and fractional number not recognized
+- bracket \(\[\{\}\]\)
+- keyword (special forms and macros thereof)
+
+Seems to be a bug on the quote management (perhaps my FR-ch keyboard) so test for atoms are reported.
+Seem tu be a problem too with char type...
+
+I dive in the code...
+
 Enjoy
 
 Ivan

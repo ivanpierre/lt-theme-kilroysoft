@@ -1,21 +1,22 @@
 .cm-s-kilroysoft { color: White; background: Black; }
 
 /* Elements */
-.cm-s-kilroysoft span.cm-symbol {color: Red;}
-.cm-s-kilroysoft span.cm-variable {color: Aqua;}
+/* .cm-s-kilroysoft span.cm-symbol {color: Red;} */
+/* .cm-s-kilroysoft span.cm-variable {color: Aqua;} */
 .cm-s-kilroysoft span.cm-string {color: LightGreen; font-style:italic;}
-.cm-s-kilroysoft span.cm-string-2 {color: LightRed; font-style:italic;}
+.cm-s-kilroysoft span.cm-char {color: LightGreen; font-style:italic;}
+/* .cm-s-kilroysoft span.cm-string-2 {color: LightRed; font-style:italic;} */
 .cm-s-kilroysoft span.cm-number {color: Red; font-style:italic;}
-.cm-s-kilroysoft span.cm-bracket {color: White }
+.cm-s-kilroysoft span.cm-bracket {color: White } 
 .cm-s-kilroysoft span.cm-builtin {color: Aqua; }
 .cm-s-kilroysoft span.cm-keyword {color: Fuchsia; }
-.cm-s-kilroysoft span.cm-qualifier {color: Orange;}
+/* .cm-s-kilroysoft span.cm-qualifier {color: Orange;} */
 .cm-s-kilroysoft span.cm-comment { color:Silver; font-style:italic;}
-.cm-s-kilroysoft span.cm-def { color: LightYellow; }
-.cm-s-kilroysoft span.cm-meta {color: LightRed; }
+/* .cm-s-kilroysoft span.cm-def { color: LightYellow; } */
+/* .cm-s-kilroysoft span.cm-meta {color: LightRed; } */
 .cm-s-kilroysoft span.cm-atom { color: Orange;   font-style:italic;}
-.cm-s-kilroysoft span.cm-tag {color: White; }
-.cm-s-kilroysoft span.cm-header {color:#9dc; }
+/* .cm-s-kilroysoft span.cm-tag {color: White; } */
+/* .cm-s-kilroysoft span.cm-header {color:#9dc; } */
 
 /* Search */
 .cm-s-kilroysoft span.CodeMirror-searching { background: #aaa; color:black; }
