@@ -1,7 +1,6 @@
-lt-theme-kilroysoft
-===================
+# lt-theme-kilroysoft
 
-KilroySoft's theme on LightTable
+## KilroySoft's theme on LightTable
 
 Theme for my own usage of LightTable.
 
@@ -14,8 +13,7 @@ The CSS file should be placed in .lighttable\css\themes\ directory.
 
 Warning if you change the name of the file, you should change the names of the classes in the CSS, else LightTable will not recognize them...
 
-Changes
-=======
+## Changes
 
 For now its just tested with Clojure codemirror so the only used classes are
 - builtin (sublist of known vars and function from the core library)
@@ -29,9 +27,47 @@ For now its just tested with Clojure codemirror so the only used classes are
 
 Seems to be a bug on the quote management (perhaps my FR-ch keyboard) so test for atoms are reported.
 
-I dive in the code...
+## I dive in the code...
 
-Ok, first constatation. Modular code, so it should be no problem... I shall study more in the deep. ;)
+Ok, To apply correctly the various languages you have to read in the .lightable/js/lib/mode/ directory where are the 
+language analysis scripts. The "token" function return the string for the type of token analysed. This type is used 
+to generate the classname for token colorization i.e. for the "string"" type :
+
+    .cm-s-kilroysoft span.cm-string {color: LightGreen; font-style:italic;}
+
+
+I'll just take the standard files for clojure management and give the present types. Say :
+
+### clojure-mode.js
+
+    "builtin", "comment", "string", "char", "atom" "number", "bracket"(0-12), "keyword"
+
+### coffeescript.js
+
+    'variable', 'property', 'punctuation', 'operator', 'error' 
+    ;; 'atom', 'number', 'comment', 'keyword'
+
+### css.js
+
+     "meta", "qualifier", "variable-2", "tag", "interpolation"  
+     ;; "atom", "variable", keyword", "number", "operator", "property", "string", "builtin"
+
+### htmlmixed.js
+
+### javascript.js
+
+### less.js
+
+### markdown.js
+
+### mysql.js
+
+### plsql.js
+
+### xml.js
+
+### yaml.js
+
 
 Enjoy
 
