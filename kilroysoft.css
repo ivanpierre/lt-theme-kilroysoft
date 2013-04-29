@@ -1,22 +1,47 @@
 .cm-s-kilroysoft { color: White; background: Black; }
 
 /* Elements */
-/* .cm-s-kilroysoft span.cm-symbol {color: Red;} */
-/* .cm-s-kilroysoft span.cm-variable {color: Aqua;} */
+/* "builtin", "comment", "string", "char", "atom" "number", "bracket"(0-12), "keyword" */
+.cm-s-kilroysoft span.cm-builtin {color: Aqua; }
+.cm-s-kilroysoft span.cm-comment { color:Silver; font-style:italic;}
 .cm-s-kilroysoft span.cm-string {color: LightGreen; font-style:italic;}
 .cm-s-kilroysoft span.cm-char {color: LightGreen; font-style:italic;}
-/* .cm-s-kilroysoft span.cm-string-2 {color: LightRed; font-style:italic;} */
-.cm-s-kilroysoft span.cm-number {color: Red; font-style:italic;}
-.cm-s-kilroysoft span.cm-bracket {color: White } 
-.cm-s-kilroysoft span.cm-builtin {color: Aqua; }
-.cm-s-kilroysoft span.cm-keyword {color: Fuchsia; }
-/* .cm-s-kilroysoft span.cm-qualifier {color: Orange;} */
-.cm-s-kilroysoft span.cm-comment { color:Silver; font-style:italic;}
-/* .cm-s-kilroysoft span.cm-def { color: LightYellow; } */
-/* .cm-s-kilroysoft span.cm-meta {color: LightRed; } */
 .cm-s-kilroysoft span.cm-atom { color: Orange;   font-style:italic;}
-/* .cm-s-kilroysoft span.cm-tag {color: White; } */
-/* .cm-s-kilroysoft span.cm-header {color:#9dc; } */
+.cm-s-kilroysoft span.cm-number {color: Red; font-style:italic;}
+.cm-s-kilroysoft span.cm-bracket {color: LightGreen } 
+.cm-s-kilroysoft span.cm-keyword {color: Fuchsia; }
+
+/* 'variable', 'property', 'punctuation', 'operator', 'error' */ 
+.cm-s-kilroysoft span.cm-variable {color: Aqua;}
+.cm-s-kilroysoft span.cm-property {color: Aqua;}
+.cm-s-kilroysoft span.cm-punctuation {color: LightBlue;}
+.cm-s-kilroysoft span.cm-operator {color: LightRed;}
+.cm-s-kilroysoft span.cm-error {color: Black; background: Red;}
+
+/* "meta", "qualifier", "variable-2", "tag", "interpolation" */  
+.cm-s-kilroysoft span.cm-meta {color: Purple; }
+.cm-s-kilroysoft span.cm-qualifier {color: Yellow;}
+.cm-s-kilroysoft span.cm-variable2 {color: Aqua;}
+.cm-s-kilroysoft span.cm-tag {color: Pink; }
+.cm-s-kilroysoft span.cm-interpolation {color: Pink; }
+
+/* "variable-3" */
+.cm-s-kilroysoft span.cm-variable3 {color: Aqua;}
+
+/* 'header', 'quote', 'hr', 'link', 'em', 'strong', 'emstrong' */
+.cm-s-kilroysoft span.cm-header {color:Yellow; }
+.cm-s-kilroysoft span.cm-quote {color:Grey; }
+.cm-s-kilroysoft span.cm-hr {color:Green; }
+.cm-s-kilroysoft span.cm-link {color:LightBlue; }
+.cm-s-kilroysoft span.cm-em {color:LightGreen; }
+.cm-s-kilroysoft span.cm-strong {color:LightBlue; }
+.cm-s-kilroysoft span.cm-emstrong {color:Red; }
+
+/* "word", "attribute", "equals" */ 
+.cm-s-kilroysoft span.cm-emstrong {color:White; }
+.cm-s-kilroysoft span.cm-emstrong {color:LightGreen; }
+.cm-s-kilroysoft span.cm-emstrong {color:LightBlue; }
+
 
 /* Search */
 .cm-s-kilroysoft span.CodeMirror-searching { background: #aaa; color:black; }
@@ -60,6 +85,6 @@
 .CodeMirror div.CodeMirror-cursor { border-left: 2px solid White; }
 /* Shown when moving in bi-directional text */
 .CodeMirror div.CodeMirror-secondarycursor { border-left: 1px solid silver; }
-.CodeMirror.cm-keymap-fat-cursor div.CodeMirror-cursor { width: auto; border: none !important; background: rgba(0, 200, 200, .4); }
+.CodeMirror.cm-keymap-fat-cursor div.CodeMirror-cursor { width: auto; border: none !important; background: rgba(0, 200, 200, 0.4); }
 
 .CodeMirror-gutters { background: #202020; border-right:1px solid #444; }
