@@ -49,7 +49,7 @@ I'll just take the standard files for clojure management and give the present ty
 
 ### css.js
 
-     "meta", "qualifier", "variable-2", "tag", "interpolation"  
+     "meta", "qualifier", "variable-2", "tag", "interpolation", "string-2"  
      ;; "atom", "variable", "keyword", "number", "operator", "property", "string", "builtin"
 
 ### htmlmixed.js
