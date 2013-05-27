@@ -29,8 +29,8 @@ Seems to be a bug on the quote management (perhaps my FR-ch keyboard) so test fo
 
 ## I dive in the code...
 
-Ok, To apply correctly the various languages you have to read in the .lightable/js/lib/mode/ directory where are the 
-language analysis scripts. The "token" function return the string for the type of token analysed. This type is used 
+Ok, To apply correctly the various languages you have to read in the .lightable/js/lib/mode/ directory where are the
+language analysis scripts. The "token" function return the string for the type of token analysed. This type is used
 to generate the classname for token colorization i.e. for the "string"" type :
 
     .cm-s-kilroysoft span.cm-string {color: LightGreen; font-style:italic;}
@@ -44,12 +44,12 @@ I'll just take the standard files for clojure management and give the present ty
 
 ### coffeescript.js
 
-    'variable', 'property', 'punctuation', 'operator', 'error' 
+    'variable', 'property', 'punctuation', 'operator', 'error'
     ;; 'atom', 'number', 'comment', 'keyword'
 
 ### css.js
 
-     "meta", "qualifier", "variable-2", "tag", "interpolation", "string-2"  
+     "meta", "qualifier", "variable-2", "tag", "interpolation", "string-2"
      ;; "atom", "variable", "keyword", "number", "operator", "property", "string", "builtin"
 
 ### htmlmixed.js
@@ -58,8 +58,8 @@ I'll just take the standard files for clojure management and give the present ty
 
 ### javascript.js
 
-    "variable-3" 
-    ;; "operator", "atom", "keyword", "string", "number", "comment", "variable", "variable-2"  
+    "variable-3"
+    ;; "operator", "atom", "keyword", "string", "number", "comment", "variable", "variable-2"
 
 ### less.js
 
@@ -78,9 +78,29 @@ I'll just take the standard files for clojure management and give the present ty
 
 ### xml.js
 
-    "word", "attribute", "equals" 
+    "word", "attribute", "equals"
     ;; "meta", "error", "atom", "tag", "comment"
 
+## Problems with ' whith QWERTZ keyboards
+
+There's a problem with keaborad recognition got '. It's not in LightTable but in  codemirror
+.
+Well a 'pis aller' can be a little modification in the
+.lighttable/js/lib/codemorror.js file @ line 1330 and suppress the entry for "["
+
+It's a problem with Javascript key event insanity with multiple keyboards. I prefer not
+to report the arguments so it's bullshitesque... (Privacy reason...)
+
+``` javascript
+  var keyNames = {3: "Enter", 8: "Backspace", 9: "Tab", 13: "Enter", 16: "Shift", 17: "Ctrl", 18: "Alt",
+                  19: "Pause", 20: "CapsLock", 27: "Esc", 32: "Space", 33: "PageUp", 34: "PageDown", 35: "End",
+                  36: "Home", 37: "Left", 38: "Up", 39: "Right", 40: "Down", 44: "PrintScrn", 45: "Insert",
+                  46: "Delete", 59: ";", 91: "Mod", 92: "Mod", 93: "Mod", 109: "-", 107: "=", 127: "Delete",
+                  186: ";", 187: "=", 188: ",", 189: "-", 190: ".", 191: "/", 192: "`", 220: "\\",
+                  221: "]", 222: "'", 63276: "PageUp", 63277: "PageDown", 63275: "End", 63273: "Home",
+                  63234: "Left", 63232: "Up", 63235: "Right", 63233: "Down", 63302: "Insert", 63272: "Delete"};
+
+```
 Enjoy
 
 Ivan
