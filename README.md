@@ -25,8 +25,6 @@ For now its just tested with Clojure codemirror so the only used classes are
 - bracket \(\[\{\}\]\)
 - keyword (special forms and macros thereof)
 
-Seems to be a bug on the quote management (perhaps my FR-ch keyboard) so test for atoms are reported.
-
 ## I dive in the code...
 
 Ok, To apply correctly the various languages you have to read in the .lightable/js/lib/mode/ directory where are the
@@ -81,9 +79,9 @@ I'll just take the standard files for clojure management and give the present ty
     "word", "attribute", "equals"
     ;; "meta", "error", "atom", "tag", "comment"
 
-## Problems with ' whith QWERTZ keyboards
+## Problems with ' on QWERTZ keyboards
 
-There's a problem with keaborad recognition got '. It's not in LightTable but in  codemirror
+There's a problem with keyborad recognition with ' (quote). It's not in LightTable but in codemirror
 .
 Well a 'pis aller' can be a little modification in the
 .lighttable/js/lib/codemorror.js file @ line 1330 and suppress the entry for "["
