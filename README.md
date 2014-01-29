@@ -1,8 +1,8 @@
 # lt-theme-kilroysoft
 
-## KilroySoft's theme on LightTable
+## kilroySoft's theme on LightTable
 
-Theme for my own usage of LightTable.
+Theme for our own usage of LightTable at kilroySoft's.
 
 - Marked external brackets.
 - Raibow brackets.
@@ -13,9 +13,16 @@ The CSS file should be placed in .lighttable\css\themes\ directory.
 
 Warning if you change the name of the file, you should change the names of the classes in the CSS, else LightTable will not recognize them...
 
-## Changes
+## Images
+
+![Clojure](https://raw.github.com/ivanpierre/lt-theme-kilroysoft/master/img/editclj.png)
+![CSS](https://raw.github.com/ivanpierre/lt-theme-kilroysoft/master/img/editcss.png)
+![JavaScript](https://raw.github.com/ivanpierre/lt-theme-kilroysoft/master/img/editjs.png)
+
+## Changes v0.0.2
 
 For now its just tested with Clojure codemirror so the only used classes are
+
 - builtin (sublist of known vars and function from the core library)
 - comment ; xxxxxxx \\n
 - string
@@ -102,3 +109,9 @@ to report the arguments so it's bullshitesque... (Privacy reason...)
 Enjoy
 
 Ivan
+
+## Licence
+
+Eclipse Public License - v 1.0, the same as Clojure
+
+see LICENSE file in the directory
