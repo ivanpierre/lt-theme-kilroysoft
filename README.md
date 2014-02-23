@@ -16,6 +16,12 @@ The directory should be placed in the plugin directory. user.behaviors file can 
 
 Warning ! if you change the name of the file, you should change the names of the classes in the CSS, else LightTable will not recognize them...
 
+## Integrated as plugin
+
+Now plugin manager can be used to directly load the theme from the Light Table repository.
+
+You can find it under : LightTable kilroySoft's theme.
+
 ## Changes version 0.0.2
 
 Adapted to the new plugin model
