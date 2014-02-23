@@ -1,7 +1,7 @@
 .cm-s-kilroysoft { color: White; background: Black; }
 
 /* Elements */
-/* "builtin", "comment", "string", "char", "atom" "number", "bracket"(0-12), "keyword" from clojure-mode.js*/
+/* builtin, comment, string, char, atom, number, bracket(0-12), keyword from clojure-mode.js*/
 .cm-s-kilroysoft span.cm-builtin {color: Aqua; }
 .cm-s-kilroysoft span.cm-comment { color:Silver; font-style:italic;}
 .cm-s-kilroysoft span.cm-string {color: LightGreen; font-style:italic;}
@@ -11,44 +11,78 @@
 .cm-s-kilroysoft span.cm-bracket {color: LightGreen }
 .cm-s-kilroysoft span.cm-keyword {color: Fuchsia; }
 
-/* 'variable', 'property', 'punctuation', 'operator', 'error' from coffeescript.js */
+/* variable, property, punctuation', operator, error from coffeescript.js */
 .cm-s-kilroysoft span.cm-variable {color: Aqua;}
 .cm-s-kilroysoft span.cm-property {color: Pink;}
 .cm-s-kilroysoft span.cm-punctuation {color: LightBlue;}
 .cm-s-kilroysoft span.cm-operator {color: Orange;}
 .cm-s-kilroysoft span.cm-error {color: Black; background: Red;}
 
-/* "meta", "qualifier", "variable-2", "tag", "interpolation" from css.js */
+/* meta, qualifier, variable-2, tag, interpolation from css.js */
 .cm-s-kilroysoft span.cm-meta {color: Purple; }
 .cm-s-kilroysoft span.cm-qualifier {color: Yellow;}
 .cm-s-kilroysoft span.cm-variable2 {color: Aqua;}
 .cm-s-kilroysoft span.cm-tag {color: Pink; }
-.cm-s-kilroysoft span.cm-interpolation {color: Pink; }
+.cm-s-kilroysoft span.cm-interpolation {color: Pink;}
 
-/* "variable-3" from javascript.js */
+/* variable-3 from javascript.js */
 .cm-s-kilroysoft span.cm-variable3 {color: Aqua;}
 
-/* 'header', 'quote', 'hr', 'link', 'em', 'strong', 'emstrong' from markdown.js*/
-.cm-s-kilroysoft span.cm-header {color:Yellow; }
-.cm-s-kilroysoft span.cm-quote {color:Grey; }
-.cm-s-kilroysoft span.cm-hr {color:Green; }
-.cm-s-kilroysoft span.cm-link {color:LightBlue; }
-.cm-s-kilroysoft span.cm-em {color:LightGreen; }
-.cm-s-kilroysoft span.cm-strong {color:LightBlue; }
-.cm-s-kilroysoft span.cm-emstrong {color:Red; }
+/* header, quote, hr, link, em, strong, emstrong from markdown.js*/
+.cm-s-kilroysoft span.cm-header {color:Yellow;}
+.cm-s-kilroysoft span.cm-quote {color:Grey;}
+.cm-s-kilroysoft span.cm-hr {color:Green;}
+.cm-s-kilroysoft span.cm-link {color:LightBlue;}
+.cm-s-kilroysoft span.cm-em {color:LightGreen;}
+.cm-s-kilroysoft span.cm-strong {color:LightBlue;}
+.cm-s-kilroysoft span.cm-emstrong {color:Red;}
 
-/* "word", "attribute", "equals" from xml.js */
-.cm-s-kilroysoft span.cm-word {color:White; }
-.cm-s-kilroysoft span.cm-attribute {color:LightGreen; }
-.cm-s-kilroysoft span.cm-equals {color:LightBlue; }
+/* word, attribute, equals from xml.js */
+.cm-s-kilroysoft span.cm-word {color:White;}
+.cm-s-kilroysoft span.cm-attribute {color:LightGreen;}
+.cm-s-kilroysoft span.cm-equals {color:LightBlue;}
 
 /* instr, label, class, directive, access, base from jasmine.js*/
-.cm-s-kilroysoft span.cm-instr {color:Yellow; }
-.cm-s-kilroysoft span.cm-label {color:Orange; }
-.cm-s-kilroysoft span.cm-class {color:White; }
-.cm-s-kilroysoft span.cm-directive {color:Aqua; }
-.cm-s-kilroysoft span.cm-access {color:LightBlue; }
-.cm-s-kilroysoft span.cm-base {color:Yellow; }
+.cm-s-kilroysoft span.cm-instr {color:Yellow;}
+.cm-s-kilroysoft span.cm-label {color:Orange; font-style:italic;}
+.cm-s-kilroysoft span.cm-class {color:White;}
+.cm-s-kilroysoft span.cm-type {color:LightGreen;}
+.cm-s-kilroysoft span.cm-directive {color:Aqua;}
+.cm-s-kilroysoft span.cm-access {color:LightBlue;}
+.cm-s-kilroysoft span.cm-base {color:Yellow;}
+
+/* positive, negative from diff.js */
+.cm-s-kilroysoft span.cm-positive {color:White;}
+.cm-s-kilroysoft span.cm-negative {color:Orange; font-style:italic;}
+
+/* ident from eiffel.js */
+.cm-s-kilroysoft span.cm-ident {color:White;}
+
+/* special from erlang.js */
+.cm-s-kilroysoft span.cm-special {color:Pink;}
+.cm-s-kilroysoft span.cm-def {color:Green;}
+
+/* link from gfm.js */
+.cm-s-kilroysoft span.cm-link {color:Blue;}
+
+/* string-2 from http.js */
+.cm-s-kilroysoft span.cm-string-2 {color:Green; font-style:italic;}
+
+/* plsql-string, plsql-comment from plsql.js */
+.cm-s-kilroysoft span.cm-plsql-string {color:Green; font-style:italic;}
+.cm-s-kilroysoft span.cm-plsql-comment {color:Silver; font-style:italic;}
+
+/* arrow, arg-is, dollar, semi  from r.js */
+.cm-s-kilroysoft span.cm-arrow {color:LightBlue;}
+.cm-s-kilroysoft span.cm-arg-is {color:Yellow;}
+.cm-s-kilroysoft span.cm-dollar {color:Red;}
+.cm-s-kilroysoft span.cm-semi {color:LightGreen;}
+
+
+
+
+
+
 
 
 /* Search */
