@@ -42,7 +42,7 @@
 .cm-s-kilroysoft span.cm-attribute {color:LightGreen;}
 .cm-s-kilroysoft span.cm-equals {color:LightBlue;}
 
-/* instr, label, class, directive, access, base from jasmine.js*/
+/* instr, label, class, type, directive, access, base from jasmine.js*/
 .cm-s-kilroysoft span.cm-instr {color:Yellow;}
 .cm-s-kilroysoft span.cm-label {color:Orange; font-style:italic;}
 .cm-s-kilroysoft span.cm-class {color:White;}
@@ -77,12 +77,6 @@
 .cm-s-kilroysoft span.cm-arg-is {color:Yellow;}
 .cm-s-kilroysoft span.cm-dollar {color:Red;}
 .cm-s-kilroysoft span.cm-semi {color:LightGreen;}
-
-
-
-
-
-
 
 
 /* Search */

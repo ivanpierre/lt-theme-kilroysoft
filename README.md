@@ -16,6 +16,15 @@ The directory should be placed in the plugin directory. user.behaviors file can 
 
 Warning ! if you change the name of the file, you should change the names of the classes in the CSS, else LightTable will not recognize them...
 
+## Changes version 0.0.2
+
+Adapted to the new plugin model
+
+## Changes version 0.0.3
+
+Corrected LightRed invalid color.
+Added all color codes for tokens of standard syntax files, except apl.js... ;)
+
 ## Images
 
 Clojure file
@@ -27,63 +36,74 @@ CSS file
 Javascript file
 ![JavaScript](https://raw.github.com/ivanpierre/lt-theme-kilroysoft/master/img/editjs.png)
 
-## Changes v0.0.2
-
-Adapted to the new plugin model
-
 ## I dive in the code...
 
-Ok, To apply correctly the various languages you have to read in the .lightable/js/lib/mode/ directory where are the
+Ok, To apply correctly the various languages you have to read in the .lightable/core/node-modules/codemirror/modes/ directory where are the
 language analysis scripts. The "token" function return the string for the type of token analysed. This type is used
-to generate the classname for token colorization i.e. for the "string"" type :
+to generate the classname for token colorization i.e. for the "string" type :
 
     .cm-s-kilroysoft span.cm-string {color: LightGreen; font-style:italic;}
 
+I've taken the whole standard files and completed types. I only put new types for each
+.js file, not the repeated used ones.
 
-I'll just take the standard files for clojure management and give the present types. Say :
+Say :
 
 ### clojure-mode.js
 
-    "builtin", "comment", "string", "char", "atom" "number", "bracket"(0-12), "keyword"
+    builtin, comment, string, char, atom, number, bracket(0-12), keyword
 
 ### coffeescript.js
 
-    'variable', 'property', 'punctuation', 'operator', 'error'
-    ;; 'atom', 'number', 'comment', 'keyword'
+    variable, property, punctuation, operator, error
 
 ### css.js
 
-     "meta", "qualifier", "variable-2", "tag", "interpolation", "string-2"
-     ;; "atom", "variable", "keyword", "number", "operator", "property", "string", "builtin"
-
-### htmlmixed.js
-
-    No token, managed by css, javascript and xml.
+     meta, qualifier, variable-2, tag, interpolation, string-2
 
 ### javascript.js
 
-    "variable-3"
-    ;; "operator", "atom", "keyword", "string", "number", "comment", "variable", "variable-2"
-
-### less.js
-
-    ;; "keyword", "number", "string", "tag", "atom", "variable", "comment", "meta"
+    variable-3
 
 ### markdown.js
 
-    'header', 'quote', 'hr', 'link', 'em', 'strong', 'emstrong'
-    ;; 'comment', 'string', "tag"
-
-
-### mysql.js
-
-    ;; "variable", "variable-2", "atom", "comment", "string", "keyword" ;;; operator (missing null)
-
+    header, quote, hr, link, em, strong, emstrong
 
 ### xml.js
 
-    "word", "attribute", "equals"
-    ;; "meta", "error", "atom", "tag", "comment"
+    word, attribute, equals
+
+### jasmin.js
+
+    instr, label, class, directive, access, base, type
+
+### diff.js
+
+    positive, negative
+
+### eiffel.js
+
+    ident
+
+### erlang.js
+
+    special
+
+### gfm.js
+
+    link
+
+### http.js
+
+    string-2
+
+### plsql.js
+
+    plsql-string, plsql-comment
+
+### r.js
+
+    arrow, arg-is, dollar, semi
 
 Enjoy
 
