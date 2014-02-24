@@ -1,5 +1,5 @@
 {:name "LightTable kilroySoft's theme"
- :version "0.0.2"
+ :version "0.0.3"
  :author "Ivan Pierre, <ivan@kilroysoft.ch>"
  :source "https://github.com/ivanpierre/lt-theme-kilroysoft"
  :desc "KilroySoft's theme with a dark background and rainbow brackets.
